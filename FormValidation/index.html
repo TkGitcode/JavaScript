@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link  href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">  
+                <label>UserName</label>
+                <input type="text" placeholder="Enter a Name" id="username">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">  
+                <label>Email</label>
+                <input type="text" placeholder="Enter a Mail id" id="email">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">  
+                <label>Password</label>
+                <input type="text" placeholder="Enter a Password" id="Password">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">  
+                <label>Conform Password</label>
+                <input type="text" placeholder="Re Enter a Password" id="cnfPassword">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        const form = document.getElementById("form");
+        const usernametxt=document.getElementById("username");
+        const emailtxt = document.getElementById("email");
+        const Passwordtxt=document.getElementById("Password");
+        const cnfPasswordtxt= document.getElementById("cnfPassword");
+        const Submitbutton=document.getElementById("submit");
+        
+        Submitbutton.addEventListener('click',e=>
+        {
+            var us=usernametxt.value;
+            alert(us);
+            // e.preventDefault();
+            // checkInput();
+        });
+
+
+        // function isEmail(email){
+        //    return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email);
+        // }
+        // function checkInput()
+        // {
+        //     const usernameval =usernametxt.value.trim();
+        //     const email =emailtxt.value.trim();
+        //     const Password =Passwordtxt.value.trim();
+        //     const Conform =cnfPasswordtxt.value.trim();
+        //     //User Name Condition  
+        //     if(username===' ')
+        //     {
+        //             setError(username,'UserName is Blank');
+        //     }
+        //     else
+        //     {
+        //     setSuccess(username);
+        //     }
+        //     //User Email Condition 
+        //     if(email==='')
+        //     { 
+        //                setError(email,'MailId is Blank');
+        //     }
+        //     else if(!isEmail(email))
+        //     {
+        //         SetError(email,'Invalid Email')
+        //     }
+        //     else
+        //     {
+        //     setSuccess(email);
+        //     }
+        //     //User password Condition 
+        //     if(Password==='')
+        //     {
+        //                setError(Password,'password is Blank');
+        //     }
+        //     else
+        //     {
+        //     setSuccess(Password);
+        //     }
+        //      //User cnfpassword Condition 
+        //      if(cnfPassword==='')
+        //     {
+        //                setError(cnfPassword,'cnfpassword is Blank');
+        //     }
+        //     else if(cnfPassword !== Password)
+        //     {
+        //         setError(cnfPassword,'cnfpassword is Blank');
+            
+        //     }
+        //     else
+        //     setSuccess(cnfPassword);
+        // }
+        // function setError(input,message)
+        // {
+        //     const formcontrol = input.parentElement;
+        //     const small=formcontrol.querySelector('small');
+        //     formcontrol.className='.form-control error';
+        //     small.innerText=message;
+        // }
+    </script>
+       
+</body>
+</html>
+
