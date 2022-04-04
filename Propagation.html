@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling and Propagation</title>
+    <style>
+        main {
+            width: 400px;
+            height: 200px;
+            border: 2px solid red;
+            background:  gray;
+        }
+
+        div {
+            width: 360px;
+            height: 150px;
+            border: 2px solid black;
+            margin: 10px;
+            background:  rgb(88, 70, 70);
+        }
+
+        p {
+            width: 260px;
+            height: 120px;
+            border: 2px solid forestgreen;
+            margin: 8px;
+            background:  #1d58c5;
+        }
+        span
+        {
+            width: 160px;
+            height: 80px;
+            border: 2px solid blue;
+            margin:  7px;
+            display: block;
+            background:  rgba(12, 12, 14, 0.849);
+        }
+        .gold
+        {
+            background:  gold;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="m">
+        <div id="d">
+            <p id="p">
+                <span id="s">
+
+                </span>
+            </p>
+        </div>
+    </main>
+    <script src="Propagation.js"></script>
+</body>
+
+</html>
